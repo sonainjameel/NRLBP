@@ -1,0 +1,9 @@
+load('Train_NRLBP_Features')
+load('Test_NRLBP_Features')
+load('Train_NRLBP_Label')
+load('Test_NRLBP_Label')
+SVMModel=fitcsvm(Train_NRLBP_Features,Train_NRLBP_Label);
+[label,score]=predict(SVMModel,Test_NRLBP_Features);
+label=label';
+Test_NRLBP_Label=Test_NRLBP_Label';
+plotconfusion(label,Test_NRLBP_Label)

@@ -1,0 +1,1 @@
+"evm_full" , "NRLBP_function" and "nrlbp_mapping_info_1d" in your directory and call the NRLBP function by following the Demo.m
